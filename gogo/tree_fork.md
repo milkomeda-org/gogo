@@ -29,3 +29,8 @@ type PositionSerializer struct {
  	receiver.Children = append(receiver.Children, v...)
  }
  ```
+
+case：
+- 菜单栏
+- 文件树
+- 人力资源
