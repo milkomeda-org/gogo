@@ -15,9 +15,8 @@ result := gogo.BuildTreeByRecursive(nodes)
 example:
  ```
 type PositionSerializer struct {
- 	model.BaseModel
- 	ParentID uint  // 上级ID
- 	OfficeID uint  // 组织ID
+    ID uint
+ 	ParentID uint
  	Children []gogo.ForkTreeNode
  }
  func (receiver *PositionSerializer) GetID() uint {
