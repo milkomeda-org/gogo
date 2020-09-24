@@ -1,2 +1,2 @@
 # GoGo
-> the fast components library, Go Go!!!k
+> a fast components library
