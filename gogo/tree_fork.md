@@ -8,21 +8,21 @@ result := gogo.BuildTreeByRecursive(nodes)
 ```
  	
 > ForkTreeNode接口
-- GetID() uint
-- GetPID() uint
+- GetID() int
+- GetPID() int
 - Following([]ForkTreeNode)
 
 example:
  ```
 type PositionSerializer struct {
-    ID uint
- 	ParentID uint
+    ID int
+ 	ParentID int
  	Children []gogo.ForkTreeNode
  }
- func (receiver *PositionSerializer) GetID() uint {
+ func (receiver *PositionSerializer) GetID() int {
  	return receiver.ID
  }
- func (receiver *PositionSerializer) GetPID() uint {
+ func (receiver *PositionSerializer) GetPID() int {
  	return receiver.ParentID
  }
  func (receiver *PositionSerializer) Following(v []gogo.ForkTreeNode) {
