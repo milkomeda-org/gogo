@@ -12,6 +12,8 @@ result := gogo.BuildTreeByRecursive(nodes)
 - GetPID() int
 - Following([]ForkTreeNode)
 
+> 元素类型实现ForkTreeNode接口，就能使用建树函数
+
 example:
  ```
 type PositionSerializer struct {
@@ -33,4 +35,4 @@ type PositionSerializer struct {
 case：
 - 菜单栏
 - 文件树
-- 人力资源
+- 组织关系
