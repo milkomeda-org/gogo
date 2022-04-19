@@ -1,4 +1,4 @@
-package gogo
+package utils
 
 // ForkTreeNode 分叉树节点
 type ForkTreeNode interface {

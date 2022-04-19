@@ -1,4 +1,4 @@
-package gogo
+package utils
 
 // BuildTreeByRecursive 通过递归建树
 func BuildTreeByRecursive(offices []ForkTreeNode) []ForkTreeNode {
