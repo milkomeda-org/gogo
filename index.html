@@ -1,0 +1,15 @@
+<html>
+<script src="static/wasm_exec.js"></script>
+<script>
+	const go = new Go();
+	WebAssembly.instantiateStreaming(fetch("static/main.wasm"), go.importObject)
+		.then((result) => go.run(result.instance));
+</script>
+
+<body>
+<input id="num" type="number" />
+<button id="btn" onclick="ans.innerHTML=decode('cOYnULidg5pVZlS3bxTLpQ==', '123456781234567812345678')">Click</button>
+<p id="ans"></p>
+</body>
+
+</html>
